@@ -9,6 +9,7 @@
 #import "UIView+PropertyMaker.h"
 #import "UILabel+PropertyMaker.h"
 #import "UIButton+PropertyMaker.h"
+#import "UIImageView+PropertyMaker.h"
 
 @interface ViewController ()
 
@@ -51,6 +52,17 @@
         make.superView(self.view);
     } constrains:^(MASConstraintMaker *make) {
         make.top.equalTo(view.mas_bottom).offset(5);
+        make.width.height.equalTo(@30);
+        make.centerX.equalTo(view);
+    }];
+    
+    UIImageView *imgView = [[UIImageView alloc] init];
+    [imgView ch_makeImageViewProperties:^(CHImageViewPropertyMaker *make) {
+        make.image([UIImage imageNamed:@"btn_star"]);
+        make.backgroundColor(UIColor.cyanColor);
+        make.superView(self.view);
+    } constrains:^(MASConstraintMaker *make) {
+        make.top.equalTo(btn.mas_bottom).offset(6);
         make.width.height.equalTo(@30);
         make.centerX.equalTo(view);
     }];
