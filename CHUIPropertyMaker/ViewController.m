@@ -45,7 +45,6 @@
     
     UIButton *btn = [[UIButton alloc] init];
     [btn ch_makeButtonProperties:^(CHButtonPropertyMaker *make) {
-        make.title(@"this is a button");
         make.image([UIImage imageNamed:@"btn_star"]).forState(UIControlStateNormal);
         make.image([UIImage imageNamed:@"btn_starred"]).forState(UIControlStateSelected);
         make.action(@selector(star:)).withTarget(self).forEvent(UIControlEventTouchUpInside);

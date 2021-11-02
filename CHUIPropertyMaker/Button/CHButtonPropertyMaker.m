@@ -20,7 +20,6 @@
     return ^CHButtonProperty *(UIColor *titleColor){
         CHButtonProperty *buttonStyle = [[CHButtonProperty alloc] initWithView:self.view
                                                                     titleColor:titleColor];
-        [(UIButton *)self.view setTitleColor:titleColor forState:UIControlStateNormal];
         return buttonStyle;
     };
 }
@@ -29,7 +28,6 @@
     return ^CHButtonProperty *(NSString *title){
         CHButtonProperty *buttonStyle = [[CHButtonProperty alloc] initWithView:self.view
                                                                          title:title];
-        [(UIButton *)self.view setTitle:title forState:UIControlStateNormal];
         return buttonStyle;
     };
 }
@@ -38,7 +36,6 @@
     return ^CHButtonProperty *(UIImage *image) {
         CHButtonProperty *buttonStyle = [[CHButtonProperty alloc] initWithView:self.view
                                                                          image:image];
-        [(UIButton *)self.view setImage:image forState:UIControlStateNormal];
         return buttonStyle;
     };
 }
@@ -47,7 +44,6 @@
     return ^CHButtonProperty *(NSAttributedString *attributedTitle) {
         CHButtonProperty *buttonStyle = [[CHButtonProperty alloc] initWithView:self.view
                                                                attributedTitle:attributedTitle];
-        [(UIButton *)self.view setAttributedTitle:attributedTitle forState:UIControlStateNormal];
         return buttonStyle;
     };
 }
