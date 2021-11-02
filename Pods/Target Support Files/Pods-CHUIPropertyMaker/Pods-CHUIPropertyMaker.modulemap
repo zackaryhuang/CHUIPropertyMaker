@@ -1,0 +1,6 @@
+framework module Pods_CHUIPropertyMaker {
+  umbrella header "Pods-CHUIPropertyMaker-umbrella.h"
+
+  export *
+  module * { export * }
+}

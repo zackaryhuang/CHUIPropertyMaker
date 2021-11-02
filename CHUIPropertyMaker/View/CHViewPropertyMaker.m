@@ -93,4 +93,11 @@
         return self;
     };
 }
+
+- (CHViewPropertyMaker * _Nonnull (^)(BOOL))clipToBounds {
+    return ^CHViewPropertyMaker *(BOOL clipToBounds) {
+        [self.view setClipsToBounds:clipToBounds];
+        return self;
+    };
+}
 @end

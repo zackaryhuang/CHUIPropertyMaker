@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CHViewPropertyMaker.h"
-#import "Masonry.h"
+@import Masonry;
 
 @interface UIView (PropertyMaker)
 

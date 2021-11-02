@@ -31,6 +31,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 设置圆角
 @property (nonatomic, copy, readonly) CHViewPropertyMaker *(^cornerRadius)(CGFloat cornerRadius);
 
+@property (nonatomic, copy, readonly) CHViewPropertyMaker *(^clipToBounds)(BOOL clipToBounds);
+
 /// 添加点击手势事件
 @property (nonatomic, copy, readonly) CHViewPropertyMaker *(^tapGestureAction)(id target, SEL selector);
 

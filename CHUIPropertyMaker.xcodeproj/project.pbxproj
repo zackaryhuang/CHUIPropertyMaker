@@ -3,25 +3,68 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0477981B2731841F00A802EB /* CHCollectionViewPropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047797F52731841F00A802EB /* CHCollectionViewPropertyMaker.m */; };
+		0477981C2731841F00A802EB /* UICollectionView+PropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047797F62731841F00A802EB /* UICollectionView+PropertyMaker.m */; };
+		0477981D2731841F00A802EB /* CHScrollViewPropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047797FA2731841F00A802EB /* CHScrollViewPropertyMaker.m */; };
+		0477981E2731841F00A802EB /* UIScrollView+PropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047797FB2731841F00A802EB /* UIScrollView+PropertyMaker.m */; };
+		0477981F2731841F00A802EB /* CHViewProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798002731841F00A802EB /* CHViewProperty.m */; };
+		047798202731841F00A802EB /* CHViewPropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798012731841F00A802EB /* CHViewPropertyMaker.m */; };
+		047798212731841F00A802EB /* UIView+PropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798022731841F00A802EB /* UIView+PropertyMaker.m */; };
+		047798222731841F00A802EB /* UITableView+PropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798062731841F00A802EB /* UITableView+PropertyMaker.m */; };
+		047798232731841F00A802EB /* CHTableViewPropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798092731841F00A802EB /* CHTableViewPropertyMaker.m */; };
+		047798242731841F00A802EB /* CHLabelPropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477980B2731841F00A802EB /* CHLabelPropertyMaker.m */; };
+		047798252731841F00A802EB /* UILabel+PropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477980E2731841F00A802EB /* UILabel+PropertyMaker.m */; };
+		047798262731841F00A802EB /* CHImageViewPropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798122731841F00A802EB /* CHImageViewPropertyMaker.m */; };
+		047798272731841F00A802EB /* UIImageView+PropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798132731841F00A802EB /* UIImageView+PropertyMaker.m */; };
+		047798282731841F00A802EB /* CHButtonPropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798172731841F00A802EB /* CHButtonPropertyMaker.m */; };
+		047798292731841F00A802EB /* CHButtonProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 047798182731841F00A802EB /* CHButtonProperty.m */; };
+		0477982A2731841F00A802EB /* UIButton+PropertyMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0477981A2731841F00A802EB /* UIButton+PropertyMaker.m */; };
 		04F6989D272D1536002557F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F6989C272D1536002557F4 /* AppDelegate.m */; };
 		04F698A3272D1536002557F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F698A2272D1536002557F4 /* ViewController.m */; };
 		04F698A8272D1537002557F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04F698A7272D1537002557F4 /* Assets.xcassets */; };
 		04F698AB272D1537002557F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04F698A9272D1537002557F4 /* LaunchScreen.storyboard */; };
 		04F698AE272D1537002557F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F698AD272D1537002557F4 /* main.m */; };
-		04F698BB272D156E002557F4 /* TableView in Resources */ = {isa = PBXBuildFile; fileRef = 04F698B4272D156E002557F4 /* TableView */; };
-		04F698BC272D156E002557F4 /* CollectionView in Resources */ = {isa = PBXBuildFile; fileRef = 04F698B5272D156E002557F4 /* CollectionView */; };
-		04F698BD272D156E002557F4 /* ScrollView in Resources */ = {isa = PBXBuildFile; fileRef = 04F698B6272D156E002557F4 /* ScrollView */; };
-		04F698BE272D156E002557F4 /* ImageView in Resources */ = {isa = PBXBuildFile; fileRef = 04F698B7272D156E002557F4 /* ImageView */; };
-		04F698BF272D156E002557F4 /* Lable in Resources */ = {isa = PBXBuildFile; fileRef = 04F698B8272D156E002557F4 /* Lable */; };
-		04F698C0272D156E002557F4 /* View in Resources */ = {isa = PBXBuildFile; fileRef = 04F698B9272D156E002557F4 /* View */; };
-		04F698C1272D156E002557F4 /* Button in Resources */ = {isa = PBXBuildFile; fileRef = 04F698BA272D156E002557F4 /* Button */; };
+		F424968624538FCA7ADF0EC9 /* Pods_CHUIPropertyMaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B0ECFA5F5730CCA00D714C /* Pods_CHUIPropertyMaker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		018D54F0B4892951CD076133 /* Pods-CHUIPropertyMaker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHUIPropertyMaker.debug.xcconfig"; path = "Target Support Files/Pods-CHUIPropertyMaker/Pods-CHUIPropertyMaker.debug.xcconfig"; sourceTree = "<group>"; };
+		047797F52731841F00A802EB /* CHCollectionViewPropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCollectionViewPropertyMaker.m; sourceTree = "<group>"; };
+		047797F62731841F00A802EB /* UICollectionView+PropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+PropertyMaker.m"; sourceTree = "<group>"; };
+		047797F72731841F00A802EB /* CHCollectionViewPropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCollectionViewPropertyMaker.h; sourceTree = "<group>"; };
+		047797F82731841F00A802EB /* UICollectionView+PropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+PropertyMaker.h"; sourceTree = "<group>"; };
+		047797FA2731841F00A802EB /* CHScrollViewPropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHScrollViewPropertyMaker.m; sourceTree = "<group>"; };
+		047797FB2731841F00A802EB /* UIScrollView+PropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+PropertyMaker.m"; sourceTree = "<group>"; };
+		047797FC2731841F00A802EB /* CHScrollViewPropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHScrollViewPropertyMaker.h; sourceTree = "<group>"; };
+		047797FD2731841F00A802EB /* UIScrollView+PropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+PropertyMaker.h"; sourceTree = "<group>"; };
+		047797FF2731841F00A802EB /* UIView+PropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PropertyMaker.h"; sourceTree = "<group>"; };
+		047798002731841F00A802EB /* CHViewProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHViewProperty.m; sourceTree = "<group>"; };
+		047798012731841F00A802EB /* CHViewPropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHViewPropertyMaker.m; sourceTree = "<group>"; };
+		047798022731841F00A802EB /* UIView+PropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PropertyMaker.m"; sourceTree = "<group>"; };
+		047798032731841F00A802EB /* CHViewProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHViewProperty.h; sourceTree = "<group>"; };
+		047798042731841F00A802EB /* CHViewPropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHViewPropertyMaker.h; sourceTree = "<group>"; };
+		047798062731841F00A802EB /* UITableView+PropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PropertyMaker.m"; sourceTree = "<group>"; };
+		047798072731841F00A802EB /* CHTableViewPropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHTableViewPropertyMaker.h; sourceTree = "<group>"; };
+		047798082731841F00A802EB /* UITableView+PropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PropertyMaker.h"; sourceTree = "<group>"; };
+		047798092731841F00A802EB /* CHTableViewPropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHTableViewPropertyMaker.m; sourceTree = "<group>"; };
+		0477980B2731841F00A802EB /* CHLabelPropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHLabelPropertyMaker.m; sourceTree = "<group>"; };
+		0477980C2731841F00A802EB /* UILabel+PropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+PropertyMaker.h"; sourceTree = "<group>"; };
+		0477980D2731841F00A802EB /* CHLabelPropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHLabelPropertyMaker.h; sourceTree = "<group>"; };
+		0477980E2731841F00A802EB /* UILabel+PropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+PropertyMaker.m"; sourceTree = "<group>"; };
+		047798102731841F00A802EB /* CHImageViewPropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHImageViewPropertyMaker.h; sourceTree = "<group>"; };
+		047798112731841F00A802EB /* UIImageView+PropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+PropertyMaker.h"; sourceTree = "<group>"; };
+		047798122731841F00A802EB /* CHImageViewPropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHImageViewPropertyMaker.m; sourceTree = "<group>"; };
+		047798132731841F00A802EB /* UIImageView+PropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+PropertyMaker.m"; sourceTree = "<group>"; };
+		047798152731841F00A802EB /* CHButtonProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHButtonProperty.h; sourceTree = "<group>"; };
+		047798162731841F00A802EB /* UIButton+PropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PropertyMaker.h"; sourceTree = "<group>"; };
+		047798172731841F00A802EB /* CHButtonPropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHButtonPropertyMaker.m; sourceTree = "<group>"; };
+		047798182731841F00A802EB /* CHButtonProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHButtonProperty.m; sourceTree = "<group>"; };
+		047798192731841F00A802EB /* CHButtonPropertyMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHButtonPropertyMaker.h; sourceTree = "<group>"; };
+		0477981A2731841F00A802EB /* UIButton+PropertyMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PropertyMaker.m"; sourceTree = "<group>"; };
 		04F69898272D1536002557F4 /* CHUIPropertyMaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CHUIPropertyMaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04F6989B272D1536002557F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		04F6989C272D1536002557F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,13 +74,8 @@
 		04F698AA272D1537002557F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04F698AC272D1537002557F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04F698AD272D1537002557F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		04F698B4272D156E002557F4 /* TableView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TableView; sourceTree = "<group>"; };
-		04F698B5272D156E002557F4 /* CollectionView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CollectionView; sourceTree = "<group>"; };
-		04F698B6272D156E002557F4 /* ScrollView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ScrollView; sourceTree = "<group>"; };
-		04F698B7272D156E002557F4 /* ImageView */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ImageView; sourceTree = "<group>"; };
-		04F698B8272D156E002557F4 /* Lable */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lable; sourceTree = "<group>"; };
-		04F698B9272D156E002557F4 /* View */ = {isa = PBXFileReference; lastKnownFileType = folder; path = View; sourceTree = "<group>"; };
-		04F698BA272D156E002557F4 /* Button */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Button; sourceTree = "<group>"; };
+		76C7F26CF76D6F5D6E7A3897 /* Pods-CHUIPropertyMaker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CHUIPropertyMaker.release.xcconfig"; path = "Target Support Files/Pods-CHUIPropertyMaker/Pods-CHUIPropertyMaker.release.xcconfig"; sourceTree = "<group>"; };
+		E5B0ECFA5F5730CCA00D714C /* Pods_CHUIPropertyMaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHUIPropertyMaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +83,101 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F424968624538FCA7ADF0EC9 /* Pods_CHUIPropertyMaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047797F42731841F00A802EB /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				047797F52731841F00A802EB /* CHCollectionViewPropertyMaker.m */,
+				047797F62731841F00A802EB /* UICollectionView+PropertyMaker.m */,
+				047797F72731841F00A802EB /* CHCollectionViewPropertyMaker.h */,
+				047797F82731841F00A802EB /* UICollectionView+PropertyMaker.h */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		047797F92731841F00A802EB /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				047797FA2731841F00A802EB /* CHScrollViewPropertyMaker.m */,
+				047797FB2731841F00A802EB /* UIScrollView+PropertyMaker.m */,
+				047797FC2731841F00A802EB /* CHScrollViewPropertyMaker.h */,
+				047797FD2731841F00A802EB /* UIScrollView+PropertyMaker.h */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		047797FE2731841F00A802EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				047798032731841F00A802EB /* CHViewProperty.h */,
+				047798002731841F00A802EB /* CHViewProperty.m */,
+				047798042731841F00A802EB /* CHViewPropertyMaker.h */,
+				047798012731841F00A802EB /* CHViewPropertyMaker.m */,
+				047797FF2731841F00A802EB /* UIView+PropertyMaker.h */,
+				047798022731841F00A802EB /* UIView+PropertyMaker.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		047798052731841F00A802EB /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				047798062731841F00A802EB /* UITableView+PropertyMaker.m */,
+				047798072731841F00A802EB /* CHTableViewPropertyMaker.h */,
+				047798082731841F00A802EB /* UITableView+PropertyMaker.h */,
+				047798092731841F00A802EB /* CHTableViewPropertyMaker.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		0477980A2731841F00A802EB /* Lable */ = {
+			isa = PBXGroup;
+			children = (
+				0477980D2731841F00A802EB /* CHLabelPropertyMaker.h */,
+				0477980B2731841F00A802EB /* CHLabelPropertyMaker.m */,
+				0477980C2731841F00A802EB /* UILabel+PropertyMaker.h */,
+				0477980E2731841F00A802EB /* UILabel+PropertyMaker.m */,
+			);
+			path = Lable;
+			sourceTree = "<group>";
+		};
+		0477980F2731841F00A802EB /* ImageView */ = {
+			isa = PBXGroup;
+			children = (
+				047798102731841F00A802EB /* CHImageViewPropertyMaker.h */,
+				047798112731841F00A802EB /* UIImageView+PropertyMaker.h */,
+				047798122731841F00A802EB /* CHImageViewPropertyMaker.m */,
+				047798132731841F00A802EB /* UIImageView+PropertyMaker.m */,
+			);
+			path = ImageView;
+			sourceTree = "<group>";
+		};
+		047798142731841F00A802EB /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				047798152731841F00A802EB /* CHButtonProperty.h */,
+				047798182731841F00A802EB /* CHButtonProperty.m */,
+				047798162731841F00A802EB /* UIButton+PropertyMaker.h */,
+				047798172731841F00A802EB /* CHButtonPropertyMaker.m */,
+				047798192731841F00A802EB /* CHButtonPropertyMaker.h */,
+				0477981A2731841F00A802EB /* UIButton+PropertyMaker.m */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
 		04F6988F272D1536002557F4 = {
 			isa = PBXGroup;
 			children = (
 				04F6989A272D1536002557F4 /* CHUIPropertyMaker */,
 				04F69899272D1536002557F4 /* Products */,
+				2CC6582F0759FA2F8F6E4637 /* Pods */,
+				9B346432253F92B104E05DDC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,13 +192,13 @@
 		04F6989A272D1536002557F4 /* CHUIPropertyMaker */ = {
 			isa = PBXGroup;
 			children = (
-				04F698BA272D156E002557F4 /* Button */,
-				04F698B5272D156E002557F4 /* CollectionView */,
-				04F698B7272D156E002557F4 /* ImageView */,
-				04F698B8272D156E002557F4 /* Lable */,
-				04F698B6272D156E002557F4 /* ScrollView */,
-				04F698B4272D156E002557F4 /* TableView */,
-				04F698B9272D156E002557F4 /* View */,
+				047798142731841F00A802EB /* Button */,
+				047797F42731841F00A802EB /* CollectionView */,
+				0477980F2731841F00A802EB /* ImageView */,
+				0477980A2731841F00A802EB /* Lable */,
+				047797F92731841F00A802EB /* ScrollView */,
+				047798052731841F00A802EB /* TableView */,
+				047797FE2731841F00A802EB /* View */,
 				04F6989B272D1536002557F4 /* AppDelegate.h */,
 				04F6989C272D1536002557F4 /* AppDelegate.m */,
 				04F698A1272D1536002557F4 /* ViewController.h */,
@@ -89,6 +211,23 @@
 			path = CHUIPropertyMaker;
 			sourceTree = "<group>";
 		};
+		2CC6582F0759FA2F8F6E4637 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				018D54F0B4892951CD076133 /* Pods-CHUIPropertyMaker.debug.xcconfig */,
+				76C7F26CF76D6F5D6E7A3897 /* Pods-CHUIPropertyMaker.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B346432253F92B104E05DDC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5B0ECFA5F5730CCA00D714C /* Pods_CHUIPropertyMaker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +235,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F698B1272D1537002557F4 /* Build configuration list for PBXNativeTarget "CHUIPropertyMaker" */;
 			buildPhases = (
+				931CA2C50764307DB91675C6 /* [CP] Check Pods Manifest.lock */,
 				04F69894272D1536002557F4 /* Sources */,
 				04F69895272D1536002557F4 /* Frameworks */,
 				04F69896272D1536002557F4 /* Resources */,
+				F37578F644C552B92A19BAC4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,28 +286,79 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04F698C1272D156E002557F4 /* Button in Resources */,
-				04F698BD272D156E002557F4 /* ScrollView in Resources */,
-				04F698BC272D156E002557F4 /* CollectionView in Resources */,
-				04F698BE272D156E002557F4 /* ImageView in Resources */,
-				04F698BB272D156E002557F4 /* TableView in Resources */,
 				04F698AB272D1537002557F4 /* LaunchScreen.storyboard in Resources */,
-				04F698C0272D156E002557F4 /* View in Resources */,
-				04F698BF272D156E002557F4 /* Lable in Resources */,
 				04F698A8272D1537002557F4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		931CA2C50764307DB91675C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CHUIPropertyMaker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F37578F644C552B92A19BAC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHUIPropertyMaker/Pods-CHUIPropertyMaker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CHUIPropertyMaker/Pods-CHUIPropertyMaker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CHUIPropertyMaker/Pods-CHUIPropertyMaker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		04F69894272D1536002557F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047798222731841F00A802EB /* UITableView+PropertyMaker.m in Sources */,
+				047798292731841F00A802EB /* CHButtonProperty.m in Sources */,
+				047798212731841F00A802EB /* UIView+PropertyMaker.m in Sources */,
+				047798272731841F00A802EB /* UIImageView+PropertyMaker.m in Sources */,
 				04F698A3272D1536002557F4 /* ViewController.m in Sources */,
+				0477981B2731841F00A802EB /* CHCollectionViewPropertyMaker.m in Sources */,
+				0477982A2731841F00A802EB /* UIButton+PropertyMaker.m in Sources */,
+				047798232731841F00A802EB /* CHTableViewPropertyMaker.m in Sources */,
 				04F6989D272D1536002557F4 /* AppDelegate.m in Sources */,
 				04F698AE272D1537002557F4 /* main.m in Sources */,
+				047798262731841F00A802EB /* CHImageViewPropertyMaker.m in Sources */,
+				0477981E2731841F00A802EB /* UIScrollView+PropertyMaker.m in Sources */,
+				047798242731841F00A802EB /* CHLabelPropertyMaker.m in Sources */,
+				047798202731841F00A802EB /* CHViewPropertyMaker.m in Sources */,
+				047798252731841F00A802EB /* UILabel+PropertyMaker.m in Sources */,
+				0477981D2731841F00A802EB /* CHScrollViewPropertyMaker.m in Sources */,
+				047798282731841F00A802EB /* CHButtonPropertyMaker.m in Sources */,
+				0477981F2731841F00A802EB /* CHViewProperty.m in Sources */,
+				0477981C2731841F00A802EB /* UICollectionView+PropertyMaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +490,7 @@
 		};
 		04F698B2272D1537002557F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 018D54F0B4892951CD076133 /* Pods-CHUIPropertyMaker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -316,6 +509,7 @@
 		};
 		04F698B3272D1537002557F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76C7F26CF76D6F5D6E7A3897 /* Pods-CHUIPropertyMaker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
