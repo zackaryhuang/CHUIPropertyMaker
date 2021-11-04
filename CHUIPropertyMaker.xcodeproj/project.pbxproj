@@ -90,6 +90,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0434FE5A27342F540008319A /* CHUIPropertyMaker */ = {
+			isa = PBXGroup;
+			children = (
+				047798142731841F00A802EB /* Button */,
+				047797F42731841F00A802EB /* CollectionView */,
+				0477980F2731841F00A802EB /* ImageView */,
+				0477980A2731841F00A802EB /* Label */,
+				047797F92731841F00A802EB /* ScrollView */,
+				047798052731841F00A802EB /* TableView */,
+				047797FE2731841F00A802EB /* View */,
+			);
+			path = CHUIPropertyMaker;
+			sourceTree = "<group>";
+		};
 		047797F42731841F00A802EB /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,7 +150,7 @@
 			path = TableView;
 			sourceTree = "<group>";
 		};
-		0477980A2731841F00A802EB /* Lable */ = {
+		0477980A2731841F00A802EB /* Label */ = {
 			isa = PBXGroup;
 			children = (
 				0477980D2731841F00A802EB /* CHLabelPropertyMaker.h */,
@@ -144,7 +158,7 @@
 				0477980C2731841F00A802EB /* UILabel+PropertyMaker.h */,
 				0477980E2731841F00A802EB /* UILabel+PropertyMaker.m */,
 			);
-			path = Lable;
+			path = Label;
 			sourceTree = "<group>";
 		};
 		0477980F2731841F00A802EB /* ImageView */ = {
@@ -192,13 +206,7 @@
 		04F6989A272D1536002557F4 /* CHUIPropertyMaker */ = {
 			isa = PBXGroup;
 			children = (
-				047798142731841F00A802EB /* Button */,
-				047797F42731841F00A802EB /* CollectionView */,
-				0477980F2731841F00A802EB /* ImageView */,
-				0477980A2731841F00A802EB /* Lable */,
-				047797F92731841F00A802EB /* ScrollView */,
-				047798052731841F00A802EB /* TableView */,
-				047797FE2731841F00A802EB /* View */,
+				0434FE5A27342F540008319A /* CHUIPropertyMaker */,
 				04F6989B272D1536002557F4 /* AppDelegate.h */,
 				04F6989C272D1536002557F4 /* AppDelegate.m */,
 				04F698A1272D1536002557F4 /* ViewController.h */,
