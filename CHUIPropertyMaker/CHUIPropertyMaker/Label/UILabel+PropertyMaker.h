@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CHLabelPropertyMaker.h"
-#import "Masonry.h"
+@import Masonry;
 
 @interface UILabel (PropertyMaker)
 

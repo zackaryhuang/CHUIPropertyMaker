@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
+@import Masonry;
 #import "CHImageViewPropertyMaker.h"
 
 @interface UIImageView (PropertyMaker)

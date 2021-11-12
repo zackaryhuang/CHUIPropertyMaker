@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
+@import Masonry;
 #import "CHButtonPropertyMaker.h"
 
 @interface UIButton (PropertyMaker)

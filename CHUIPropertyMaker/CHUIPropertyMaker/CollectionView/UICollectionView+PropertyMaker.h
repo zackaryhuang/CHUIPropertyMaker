@@ -7,7 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "CHCollectionViewPropertyMaker.h"
-#import "Masonry.h"
+@import Masonry;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UICollectionView (PropertyMaker)

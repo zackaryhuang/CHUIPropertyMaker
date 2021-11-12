@@ -6,7 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Masonry.h"
+@import Masonry;
 #import "CHTableViewPropertyMaker.h"
 
 NS_ASSUME_NONNULL_BEGIN
