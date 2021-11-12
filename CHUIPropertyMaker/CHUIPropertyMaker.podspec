@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CHUIPropertyMaker"
-  spec.version      = "0.0.1"
+  spec.version      = "0.0.2"
   spec.summary      = "A framework to declare UI element more efficiently."
 
   # This description is used to generate tags and improve search results.
