@@ -1,66 +1,77 @@
 # CHUIPropertyMaker
 ---
-基于链式语法的 UI 属性生成器
+A framework to declare UI elemet and set property for it with chain syntax grammar.
 
-## 使用
+## Usage
 
-在 `podfile` 中添加
+In `podfile` add
+
 `pod 'CHUIPropertyMaker'`
-执行
+
+excute
+
 `pod install`
 
+import framework
+
+`@import CHUIPropertyMaker`
+
+## Example
+
 ```objc
-UIView *view = [[UIView alloc] init];
-[view ch_makeProperties:^(CHViewPropertyMaker *make) {
-    make.superView(self.view);
-    make.backgroundColor(UIColor.redColor);
-    make.cornerRadius(10);
-    make.clipToBounds(YES);
-} constrains:^(MASConstraintMaker *make) {
-    make.center.equalTo(self.view);
-    make.width.height.equalTo(@100);
-}];
 
-UILabel *label = [[UILabel alloc] init];
-[label ch_makeLabelProperties:^(CHLabelPropertyMaker *make) {
-    make.text(@"this is a test label");
-    make.textAlignment(NSTextAlignmentCenter);
-    make.backgroundColor(UIColor.blueColor);
-    make.font([UIFont systemFontOfSize:12]);
-    make.textColor(UIColor.yellowColor);
-    make.superView(view);
-} constrains:^(MASConstraintMaker *make) {
-    make.center.equalTo(view);
-}];
+#import "ViewController.h"
+@import CHUIPropertyMaker;
 
-UIButton *btn = [[UIButton alloc] init];
-[btn ch_makeButtonProperties:^(CHButtonPropertyMaker *make) {
-    make.image([UIImage imageNamed:@"btn_star"]).forState(UIControlStateNormal);
-    make.image([UIImage imageNamed:@"btn_starred"]).forState(UIControlStateSelected);
-    make.action(@selector(star:)).withTarget(self).forEvent(UIControlEventTouchUpInside);
-    make.superView(self.view);
-} constrains:^(MASConstraintMaker *make) {
-    make.top.equalTo(view.mas_bottom).offset(5);
-    make.width.height.equalTo(@30);
-    make.centerX.equalTo(view);
-}];
+@interface ViewController ()<HCDatePickerControllerDelegate>
 
-UIImageView *imgView = [[UIImageView alloc] init];
-[imgView ch_makeImageViewProperties:^(CHImageViewPropertyMaker *make) {
-    make.image([UIImage imageNamed:@"btn_star"]);
-    make.backgroundColor(UIColor.cyanColor);
-    make.superView(self.view);
-} constrains:^(MASConstraintMaker *make) {
-    make.top.equalTo(btn.mas_bottom).offset(6);
-    make.width.height.equalTo(@30);
-    make.centerX.equalTo(view);
-}];
+@property (nonatomic, strong) UILabel *timeLabel;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // 1. The way we used to declare an UI element like this.
+    UIButton *btn = [[UIButton alloc] init];
+    btn.center = CGPointMake(self.view.center.x, self.view.center.y + 50);
+    [self.view addSubview:btn];
+    [btn setTitle:@"Click Me!" forState:UIControlStateNormal];
+    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    btn.backgroundColor = [UIColor whiteColor];
+    btn.layer.cornerRadius = 20;
+    btn.layer.shadowOffset = CGSizeMake(0, 1);
+    btn.layer.shadowColor = [UIColor blackColor].CGColor;
+    btn.layer.shadowOpacity = 0.1;
+    btn.layer.shadowRadius = 1;
+    [btn addTarget:self action:@selector(btnClick:) forControlEvents:UIControlEventTouchUpInside];
+    
+    // 2. A new way to declare UI element With CHUIPropertyMaker
+    UIButton *newBtn = [[UIButton alloc] init];
+    [newBtn ch_makeButtonProperties:^(CHButtonPropertyMaker *make) {
+        make.title(@"Click Me").forState(UIControlStateNormal);
+        make.titleColor(UIColor.blackColor).forState(UIControlStateNormal);
+        make.cornerRadius(20);
+        make.shadow(UIColor.blackColor, 0.1, CGSizeMake(0, 1), 1);
+        make.superView(self.view);
+        make.action(@selector(btnClick:)).withTarget(self).forEvent(UIControlEventTouchUpInside);
+    } constrains:^(MASConstraintMaker *make) {
+        make.width.equalTo(@100);
+        make.height.equalTo(@40);
+        make.top.equalTo(self.timeLabel.mas_bottom).offset(12);
+        make.centerX.equalTo(self.view);
+    }];
+}
+
+- (void)btnClick:(UIButton *)btn {
+    // Button Click Action
+}
+
 ```
 
-## 依赖
+## Dependency
 `Masonry`
 
-## ChangeLog
-
-* 20211102
-初始提交
