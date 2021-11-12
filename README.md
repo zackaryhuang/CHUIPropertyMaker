@@ -4,6 +4,11 @@
 
 ## 使用
 
+在 `podfile` 中添加
+`pod 'CHUIPropertyMaker'`
+执行
+`pod install`
+
 ```objc
 UIView *view = [[UIView alloc] init];
 [view ch_makeProperties:^(CHViewPropertyMaker *make) {
